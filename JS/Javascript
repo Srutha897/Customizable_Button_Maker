@@ -1,0 +1,27 @@
+let backgroundColorInputElement = document.getElementById("bgColorInput");
+let fontColorInputElement = document.getElementById("fontColorInput");
+let fontSizeInputElement = document.getElementById("fontSizeInput");
+let fontWeightInputElement = document.getElementById("fontWeightInput");
+let paddingInputElement = document.getElementById("paddingInput");
+let borderRadiusInputElement = document.getElementById("borderRadiusInput");
+let customButtonElement = document.getElementById("customButton");
+
+function applyButtonClick() {
+    let valueOfBgColor = backgroundColorInputElement.value;
+    customButtonElement.style.backgroundColor = valueOfBgColor;
+
+    let valueOfFontColor = fontColorInputElement.value;
+    customButtonElement.style.color = valueOfFontColor;
+
+    let valueOfFontSize = fontSizeInputElement.value;
+    customButtonElement.style.fontSize = valueOfFontSize;
+
+    let valueOfFontWeight = fontWeightInputElement.value;
+    customButtonElement.style.fontWeight = valueOfFontWeight;
+
+    let valueOfPadding = paddingInputElement.value;
+    customButtonElement.style.padding = valueOfPadding;
+
+    let valueOfBorderRadius = borderRadiusInputElement.value;
+    customButtonElement.style.borderRadius = valueOfBorderRadius;
+}
